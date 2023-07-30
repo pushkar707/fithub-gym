@@ -43,6 +43,7 @@ body {
 
   /* Paddings */
   --padding-5xl: 24px;
+  --padding-10xl: 32px;
   --padding-29xl: 48px;
   --padding-61xl: 80px;
   --padding-xs: 12px;
