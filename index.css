@@ -51,10 +51,10 @@
 }
 .elevate-your-workout {
   position: relative;
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-xl);
   color: var(--grey-3);
   display: inline-block;
-  width: 720px;
+  width: 638px;
 }
 .button,
 .hero-contents,
@@ -83,7 +83,7 @@
   height: 538px;
   padding: 112px 135px;
   box-sizing: border-box;
-  gap: var(--gap-13xl);
+  gap: var(--gap-5xl);
   background-image: url(./public/hero-contents@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1259,7 +1259,7 @@
 .newsletter {
   align-self: stretch;
   flex-direction: column;
-  padding: 120px 437px;
+  padding: 120px;
   gap: var(--gap-21xl);
   background-image: url(./public/newsletter@3x.png);
   background-size: cover;
@@ -1360,7 +1360,7 @@
 .footer {
   align-self: stretch;
   background-color: var(--black);
-  padding: 64px 238px;
+  padding: 64px;
   align-items: center;
   gap: var(--gap-13xl);
   z-index: 0;
@@ -1375,28 +1375,26 @@
   text-align: center;
   font-size: var(--font-size-21xl);
 }
-@media screen and (max-width: 1200px) {
-  .unleash-your-inner {
-    font-size: var(--font-size-29xl);
+
+@media screen and (max-width:960px) {
+  .program-img-icon {
+    width: 220px;
+    height: 285px;
   }
-}
-@media screen and (max-width: 960px) {
-  .unleash-your-inner {
-    font-size: var(--font-size-21xl);
-    line-height: 52px;
+
+  .program-title {
+    width: 220px;
+    left: calc(50% - 110px);
   }
-  .desktop-1 {
-    opacity: 0;
+  
+  .program-description {
+    width: 220px;
   }
-  .desktop-1.animate {
-    animation: 1s ease 0s 1 normal forwards fade-in;
-  }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+    .view-more-btn-icon, .view-more-btn-icon1 {
+      top: 8px;
+      left: 172px;
+      width: 38px;
+      height: 38px;
   }
 }

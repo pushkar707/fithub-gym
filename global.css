@@ -54,3 +54,39 @@ body {
   /* border radiuses */
   --br-5xs: 8px;
 }
+
+@media screen and (max-width: 960px) {
+  :root {
+    /* font sizes */
+    --font-size-sm: 12px;
+    --font-size-base: 14px;
+    --font-size-xl: 17px;
+    --font-size-21xl: 34px;
+    --font-size-5xl: 21px;
+    --font-size-mid: 15px;
+    --font-size-29xl: 40px;
+
+    /* Gaps */
+    --gap-13xl: 27px;
+    --gap-21xl: 34px;
+    --gap-base: 14px;
+    --gap-53xl: 62px;
+    --gap-xs: 11px;
+    --gap-5xl: 21px;
+    --gap-7xs: 5px;
+    --gap-8xs: 4px;
+    --gap-mid: 15px;
+
+    /* Paddings */
+    --padding-5xl: 21px;
+    --padding-10xl: 27px;
+    --padding-29xl: 40px;
+    --padding-61xl: 69px;
+    --padding-xs: 11px;
+    --padding-base: 14px;
+    --padding-37xl: 48px;
+    --padding-21xl: 34px;
+  }
+
+  
+}
