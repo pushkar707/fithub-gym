@@ -72,6 +72,7 @@
   padding: var(--padding-xs) var(--padding-29xl);
   font-size: var(--font-size-xl);
   color: var(--black);
+  cursor: pointer;
 }
 .hero-contents,
 .hero-section {
@@ -393,6 +394,7 @@
   width: 44.64px;
   height: 44.65px;
   overflow: hidden;
+  cursor: pointer;
 }
 .view-more-btn-icon1 {
   top: 58.2px;
@@ -416,11 +418,12 @@
   height: 1px;
 }
 .programs-scroller-item {
-  position: relative;
+  position: absolute;
   border-top: 7px solid var(--primary-color);
   box-sizing: border-box;
-  width: 228.54px;
+  width: 20vw;
   height: 7px;
+  top: -3px;
 }
 .programs-scroller {
   position: relative;
@@ -499,25 +502,15 @@
 .heading {
   position: relative;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   display: inline-block;
 }
 .heading {
   font-weight: 600;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ),
-    #0c0c03;
   width: 327px;
 }
 .explanation {
   font-size: var(--font-size-base);
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    #0c0c03;
   width: 297px;
   height: 115px;
   flex-shrink: 0;
@@ -562,23 +555,19 @@
   width: 349px;
   height: 3px;
 }
-.class {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  color: var(--grey-1);
-}
-.class,
+
 .class1,
 .left-classes {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .class1 {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   color: inherit;
+  cursor: pointer;
 }
 .left-classes {
   align-self: stretch;
@@ -599,7 +588,7 @@
 }
 .classes1 {
   flex: 1;
-  height: 456px;
+  /* height: 456px; */
   padding: 0 0 0 var(--padding-37xl);
   box-sizing: border-box;
   align-items: center;
@@ -701,7 +690,9 @@
   position: relative;
   font-size: var(--font-size-sm);
   color: var(--grey-3);
-  text-align: right;
+  text-align: center;
+  max-width: 210px;
+  height: 21px;
 }
 .trainer,
 .trainer-description {
@@ -715,8 +706,9 @@
   font-size: var(--font-size-xl);
 }
 .trainer {
+  margin: 32px 20px;
+  padding-right: 40px;
   text-decoration: none;
-  width: 251.75px;
   gap: var(--gap-xs);
   min-width: 250px;
   max-width: 400px;
@@ -893,7 +885,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 80px;
   z-index: 1;
   font-size: var(--font-size-sm);
 }
