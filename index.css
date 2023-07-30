@@ -416,6 +416,7 @@
   border-top: 1px solid var(--grey-1);
   box-sizing: border-box;
   height: 1px;
+  width: 100%;
 }
 .programs-scroller-item {
   position: absolute;
@@ -435,6 +436,7 @@
   justify-content: flex-start;
   gap: 3px;
   z-index: 1;
+  width: 100%;
 }
 .background-child,
 .background-inner,
@@ -1391,10 +1393,146 @@
     width: 220px;
   }
 
-    .view-more-btn-icon, .view-more-btn-icon1 {
+  .view-more-btn-icon, .view-more-btn-icon1 {
       top: 8px;
       left: 172px;
       width: 38px;
       height: 38px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .classes1{
+    padding: 0px;
+    justify-content: space-around;
+    width: 100%;
+    /* gap: unset; */
+  }
+
+  /* .class-child{
+    width: 36vw;
+  } */
+  .footer-links{
+    gap: var(--gap-mid);
+  }
+
+  /* TRAINERS */
+  .trainer{
+    transform: scale(0.84);
+    margin: unset;
+  }
+
+  /* events */
+  .event-card-description{
+    height: 152px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* events */
+  .event-card-description{
+    height: 144px;
+  }
+  .program-card{
+    transform: scale(0.93);
+    transform-origin:left center;
+  }
+  .success-stories{
+    flex-direction: column;
+  }
+  .transformation-img{
+    /* padding: 0px var(--padding-5xl); */
+    width: 85vw;
+  }
+  .unleash-your-inner{
+    width: 90vw;
+  }
+  .elevate-your-workout{
+    width: 85vw;
+  }
+  .hero-contents{
+    height: unset;
+    padding: 80px;
+  }
+  .footer-links{
+    flex-wrap: wrap;
+    gap: var(--gap-5xl);
+  }
+  .background1{
+    height: 3000px;
+  }
+}
+@media screen and (max-width:650px) {
+  .nav-center{
+    display: none;
+  }
+  .schedule-icon{
+    display: none;
+  }
+  .account-icon{
+    filter: brightness(0) invert(1);
+  }
+  .unleash-your-inner{
+    line-height: unset;
+  }
+  .newsletter{
+    padding: 72px var(--padding-37xl);
+  }
+  .newsletter-email-input{
+    gap: unset;
+    max-width: 90vw;
+  }
+  .placeholder{
+    padding: var(--padding-base);
+  }
+  .programs1{
+    font-size: var(--font-size-21xl);
+  }
+}
+@media screen and (max-width:465px) {
+  .class-child{
+    width: 75vw;
+  }
+  .right-classes{
+    align-items: unset;
+  }
+  .description-card{
+    width: 85vw;
+  }
+  .heading{
+    width: unset;
+  }
+  .explanation{
+    width: unset;
+  }
+  .program-card{
+    transform: scale(0.86);
+  }
+  .section-headings,.shine-up-your{
+    width: unset;
+  }
+  .programs2{
+    gap: unset;
+    padding: unset;
+  }
+  .programs1{
+    gap: unset;
+  }
+  .main-heading3{
+    width: 90vw;
+  }
+  .events-page-link{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+  .headings{
+    font-size: var(--font-size-21xl);
+  }
+  .sub-heading{
+    font-size: 12px;
   }
 }
