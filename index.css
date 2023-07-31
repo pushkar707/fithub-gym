@@ -21,6 +21,7 @@
   position: relative;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .account-icon {
   width: 22px;
@@ -50,6 +51,7 @@
   height: 22px;
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .join-now-parent{
   padding-right: 44px;
@@ -59,6 +61,7 @@
   position: relative;
   text-decoration: underline 2px var(--color-goldenrod);
   text-decoration-skip-ink: none;
+  color: var(--color-black);
 
 }
 .join-now-parent,
@@ -466,12 +469,18 @@
 }
 .programs2 {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-21xl);
   z-index: 2;
   font-size: var(--font-size-base);
+  overflow: scroll;
+  width: 90vw;
+}
+.programs2::-webkit-scrollbar {
+  display: none;
 }
 .programs-scroller-child {
   align-self: stretch;
@@ -1541,6 +1550,7 @@
   }
   .account-icon{
     filter: brightness(0) invert(1);
+    cursor: pointer;
   }
   .unleash-your-inner{
     line-height: unset;

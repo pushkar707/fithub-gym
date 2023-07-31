@@ -38,13 +38,13 @@
             <img class="close-icon" alt="" src="./public/close.png" />
       
             <div class="join-now-parent">
-              <div class="join-now-nav">Join Now</div>
-              <div class="join-now-nav">Programs</div>
-              <div class="join-now-nav">Classes</div>
-              <div class="join-now-nav">Blog</div>
-              <div class="join-now-nav">Gallery</div>
-              <div class="join-now-nav">Schedule</div>
-              <div class="join-now-nav">Account</div>
+              <a href="#" class="join-now-nav">Join Now</a>
+              <a href="#" class="join-now-nav">Programs</a>
+              <a href="#" class="join-now-nav">Classes</a>
+              <a href="#" class="join-now-nav">Blog</a>
+              <a href="#" class="join-now-nav">Gallery</a>
+              <a href="#" class="join-now-nav">Schedule</a>
+              <a href="#" class="join-now-nav">Account</a>
             </div>
           </div>
         </div>
@@ -590,6 +590,19 @@
       closeIcon.addEventListener('click',()=>{
         document.querySelector('.mobile-menu').classList.remove('slide-in-right')
         document.querySelector('.mobile-menu').classList.add('slide-out-right')
+      })
+
+      const programsDiv = document.querySelector('.programs2')
+      programsDiv.addEventListener('scroll',(e)=>{
+        const programsWidth = programsDiv.scrollWidth-programsDiv.clientWidth
+        const scrollAmount = programsDiv.scrollLeft
+        const scrollPercent = 100-(((programsWidth-scrollAmount)/programsWidth)*100)
+        
+        const programsScrollerWidth = document.querySelector('.programs-scroller-child').clientWidth
+        const programsScrollerItem = document.querySelector('.programs-scroller-item')
+        let translateWidth = (scrollPercent/100)*(programsScrollerWidth-programsScrollerItem.clientWidth)
+        programsScrollerItem.style.transform = `translatex(${translateWidth}px)`
+
       })
       </script>
   </body>
