@@ -1162,8 +1162,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   gap: var(--gap-xs);
   font-size: var(--font-size-5xl);
   color: inherit;
