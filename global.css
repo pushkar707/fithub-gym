@@ -9,6 +9,8 @@ body {
   --font-poppins: Poppins;
   --font-pt-serif: "PT Serif";
 
+  --primary-transition: 0.4s all ease-in-out;
+
   /* font sizes */
   --font-size-sm: 14px;
   --font-size-base: 16px;
@@ -130,14 +132,13 @@ body {
     --font-size-21xl: 20px;
     --font-size-5xl: 18px;
     --font-size-xl: 15px;
-    /* --font-size-xl:  */
 
-    --padding-61xl: 32px;
-    --padding-37xl: 23px;
-    --padding-21xl: 18px;
+    --padding-61xl: 45px;
+    /*--padding-37xl: 23px;
+    --padding-21xl: 18px; */
 
-    --gap-53xl: 32px;
+    /* --gap-53xl: 32px;
     --gap-21xl: 20px;
     --gap-13xl: 18px;
-  }
+  } */
 }
