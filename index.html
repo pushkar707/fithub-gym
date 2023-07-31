@@ -34,6 +34,19 @@
             <img class="schedule-icon" alt="" src="./public/vector1.svg" />
             <img src="./public/hamburger.png" alt="" class="account-icon">
           </div>
+          <div class="mobile-menu slide-in-right">
+            <img class="close-icon" alt="" src="./public/close.png" />
+      
+            <div class="join-now-parent">
+              <div class="join-now-nav">Join Now</div>
+              <div class="join-now-nav">Programs</div>
+              <div class="join-now-nav">Classes</div>
+              <div class="join-now-nav">Blog</div>
+              <div class="join-now-nav">Gallery</div>
+              <div class="join-now-nav">Schedule</div>
+              <div class="join-now-nav">Account</div>
+            </div>
+          </div>
         </div>
         <div class="hero-contents">
           <b class="unleash-your-inner text-focus-in"
@@ -566,6 +579,18 @@
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
+
+      const hamburgerIcon = document.querySelector('.account-icon')
+      hamburgerIcon.addEventListener('click',()=>{
+        document.querySelector('.mobile-menu').classList.remove('slide-out-right')
+        document.querySelector('.mobile-menu').classList.add('slide-in-right')
+        document.querySelector('.mobile-menu').style.display = "flex"
+      })
+      const closeIcon = document.querySelector('.close-icon')
+      closeIcon.addEventListener('click',()=>{
+        document.querySelector('.mobile-menu').classList.remove('slide-in-right')
+        document.querySelector('.mobile-menu').classList.add('slide-out-right')
+      })
       </script>
   </body>
 </html>
