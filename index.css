@@ -1084,6 +1084,7 @@
   flex-shrink: 0;
 }
 .events-page-link {
+  margin: auto;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -1092,6 +1093,7 @@
   gap: var(--gap-xs);
   font-size: var(--font-size-5xl);
   color: inherit;
+  z-index: 2;
 }
 .events {
   align-self: stretch;
