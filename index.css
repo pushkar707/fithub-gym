@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-5xl);
-  font-size: var(--font-size-base);
+  font-size: 12px;
   font-family: var(--font-poppins);
 }
 .account-icon,
@@ -69,10 +69,11 @@
   background-color: var(--primary-color);
   overflow: hidden;
   flex-direction: row;
-  padding: var(--padding-xs) var(--padding-29xl);
-  font-size: var(--font-size-xl);
+  padding: 8px var(--padding-29xl);
+  font-size: var(--font-size-mid);
   color: var(--black);
   cursor: pointer;
+  margin-top: var(--gap-base);
 }
 .hero-contents,
 .hero-section {
@@ -119,7 +120,6 @@
 .shine-up-your {
   position: relative;
   font-size: var(--font-size-base);
-  font-weight: 500;
   color: var(--grey-3);
   text-align: left;
   display: inline-block;
